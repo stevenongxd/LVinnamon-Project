@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVinnamon</title>
+    <link rel="stylesheet" href="/styles/register.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="icon" href="Assets/logo.png">
+
+</head>
+
+<body>
+    <header id="header-container">
+        <div id="header-items">
+            <h2>LVinnamon</h2>
+            <div id="logo-container">
+                <img src="/Assets/logo.png" alt="">
+            </div>
+            <nav>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li class="li-navbar"><a href="home.html">Home</a></li>
+                    <li class="li-navbar"><a href="products.html">Products</a></li>
+                    <li class="li-navbar"><a href="register.html">Register</a></li>
+                    <li class="li-navbar"><a href="about.html">About Us</a></li>
+                    <li class="li-navbar"><a href="location.html">Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- name, gender, 
+            region, password,
+             and the customer must agree with terms and conditions -->
+
+    <div id="box">
+
+        <div id="container-judul">
+            Register
+        </div>
+
+        <form id="form" name="form" class="form">
+
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-field">
+                <label>Gender</label>
+                <div id="radio-group">
+                    <div>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="region">Region</label>
+                <select name="region" id="region" placeholder="Select your region">
+                    <option value="select-region">Select A Region</option>
+                    <option value="dki-jakarta">DKI Jakarta</option>
+                    <option value="Jawa-Barat">Jawa Barat</option>
+                    <option value="jawa-timur">Jawa Timur</option>
+                    <option value="jawa-tengah">Jawa Tengah</option>
+                    <option value="banten">Banten</option>
+                    <option value="maluku">Maluku</option>
+                    <option value="bali">Bali</option>
+                    <option value="sumatera">Sumatera</option>
+                    <option value="papua">Papua</option>
+                    <option value="kalimantan">Kalimantan</option>
+                    <option value="sulawesi">Sulawesi</option>
+                    <option value="aceh">Aceh</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="form-field">
+                <label for="repass">Re-Password</label>
+                <input type="password" id="repass" name="repass" placeholder="Re-enter your password">
+            </div>
+            <div class="form-field">
+                <div class="tos-agree">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">I agree with all of the term and condition</label>
+                </div>
+            </div>
+
+            <button type="submit" id="register-button">Register</button>
+        </form>
+    </div>
+
+
+</body>
+<script src="Scripts/jquery-3.6.0.min.js" defer></script>
+<script src="Scripts/script.js" defer></script>
+
+</html>

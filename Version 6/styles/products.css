@@ -1,0 +1,122 @@
+/* Content */
+#container-isi2{
+    background-color: rgb(248, 209, 136);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;  
+    border-radius: 20px 20px 0 0 ;
+}
+
+#item-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.categories{  
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.categories-container{
+    margin: 10px;
+    width: 330px;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    /* background-color: white; */
+}
+
+img{
+    display: flex;
+    width: 330px;
+    height: 100%;
+    object-fit: contain;
+    border-radius:  0 0 20px 20px;
+}
+
+.judul-categories{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: transparent;
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border: black 2px solid;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+  #container-isi2 {
+    position: relative;
+  }
+  
+  #container-isi2.blur::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 2;
+    transition: 1s ease-in-out;
+  }
+  
+  .popup.show {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .popup p {
+    margin-bottom: 20px;
+  }
+  
+  .popup .closeButton {
+    display: block;
+    margin-top: 20px;
+  }
+
+/* Responsive */
+@media(max-width:1000px) {
+  #isi1{
+      width:80%;
+  }
+}
+
+@media(max-width:800px){
+  
+}
